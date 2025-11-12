@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Vilor Blog</title>
-<link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<h1>Vilor Blog</h1>
+<header>
+  <h1>Blog Simples</h1>
+  <nav>
+    <a href="/login.html">Login</a> |
+    <a href="/signup.html">Signup</a> |
+    <a href="/admin.html">Admin</a>
+  </nav>
+</header>
 
 <div id="posts"></div>
 
-<script>
-async function loadPosts() {
-    const res = await fetch('/posts');
-    const posts = await res.json();
-    const container = document.getElementById('posts');
-    container.innerHTML = posts.map(p => `<h2>${p.title}</h2><p>${p.content}</p><hr>`).join('');
-}
-
-loadPosts();
-</script>
+<script src="/js/main.js"></script>
 </body>
 </html>
