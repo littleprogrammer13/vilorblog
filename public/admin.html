@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h1>Painel Admin</h1>
+<button id="logout">Logout</button>
+
+<h2>Criar Novo Post</h2>
+<form id="newPostForm">
+  <input type="text" id="title" placeholder="Título" required>
+  <textarea id="content" placeholder="Conteúdo" required></textarea>
+  <button type="submit">Publicar</button>
+</form>
+
+<h2>Posts Existentes</h2>
+<div id="posts"></div>
+
+<script src="/js/admin.js"></script>
+</body>
+</html>
